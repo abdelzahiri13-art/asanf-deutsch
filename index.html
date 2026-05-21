@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASANF DEUTSCH - Learn German with Abdelhamid Zgeuit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-3d">
+                    <svg class="logo-svg" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+                        <!-- German Flag Colors Integration -->
+                        <defs>
+                            <linearGradient id="germanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+                                <stop offset="33%" style="stop-color:#DD0000;stop-opacity:1" />
+                                <stop offset="66%" style="stop-color:#FFCE00;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                            </linearGradient>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        
+                        <!-- Book/Education Symbol -->
+                        <path d="M 15 25 L 15 55 L 45 60 L 45 30 Z" fill="url(#germanGradient)" opacity="0.8"/>
+                        <path d="M 45 30 L 45 60 L 75 55 L 75 25 Z" fill="url(#germanGradient)" opacity="0.6"/>
+                        
+                        <!-- ASANF Text -->
+                        <text x="85" y="35" font-family="Montserrat" font-weight="900" font-size="24" fill="url(#germanGradient)" filter="url(#glow)">ASANF</text>
+                        <text x="85" y="55" font-family="Poppins" font-weight="600" font-size="14" fill="#4ECDC4" letter-spacing="3">DEUTSCH</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="floating-card card-3d">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Certified German Teacher</span>
+                </div>
+                <h1 class="glitch" data-text="Master German">Master German</h1>
+                <p class="hero-subtitle">Online with Expert Instructor</p>
+                <h2 class="teacher-name">Abdelhamid Zguit</h2>
+                <p class="hero-description">
+                    Professional online German language courses from beginner to advanced levels. 
+                    Interactive sessions, personalized learning, and proven results.
+                </p>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Students</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">A1-C2</div>
+                        <div class="stat-label">All Levels</div>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-3d btn-primary">
+                        <span>Start Learning</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                    <a href="#courses" class="btn-3d btn-secondary">
+                        <span>View Courses</span>
+                        <i class="fas fa-compass"></i>
+                    </a>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Certified</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Flexible Schedule</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-3d-object">
+                <div class="cube-container">
+                    <div class="cube">
+                        <div class="cube-face front">
+                            <div class="level-badge">A1</div>
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="cube-face back">
+                            <div class="level-badge">A2</div>
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="cube-face right">
+                            <div class="level-badge">B1</div>
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="cube-face left">
+                            <div class="level-badge">B2</div>
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <div class="cube-face top">
+                            <div class="level-badge">C1</div>
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="cube-face bottom">
+                            <div class="level-badge">C2</div>
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-icons">
+                    <div class="float-icon" style="--delay: 0s;"></div>
+                    <div class="float-icon" style="--delay: 1s;">📚</div>
+                    <div class="float-icon" style="--delay: 2s;">🎓</div>
+                    <div class="float-icon" style="--delay: 3s;">✨</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-3d">About ASANF DEUTSCH</span>
+                <p class="subtitle">Your Gateway to German Language Mastery</p>
+            </h2>
+           
+                    <div class="verified-badge">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <h3>Abdelhamid Zguit</h3>
+                            <p class="teacher-title">Certified German Language Instructor</p>
+                            <div class="teacher-stats">
+                                <div class="t-stat">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>5+ Years Experience</span>
+                                </div>
+                                <div class="t-stat">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Certified Teacher</span>
+                                </div>
+                                <div class="t-stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>100+ Students</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-right">
+                    <div class="text-card-3d">
+                        <h3>Welcome to Your German Learning Journey</h3>
+                        <p class="intro-text">
+                            At ASANF DEUTSCH, we believe that learning German should be engaging, 
+                            effective, and tailored to your individual needs.
+                        </p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Expert Instruction</h4>
+                                    <p>Learn from a certified professional with extensive teaching experience</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Modern Methodology</h4>
+                                    <p>Interactive and innovative teaching methods for faster learning</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Live Online Classes</h4>
+                                    <p>High-quality video sessions with real-time interaction</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Personal Attention</h4>
+                                    <p>Individual tracking and customized learning plans</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Certified Programs</h4>
+                                    <p>Receive official certificates upon completion of each level</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-3d">Our German Courses</span>
+                <p class="subtitle">Choose Your Learning Path</p>
+            </h2>
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card-3d" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="course-level">A1</div>
+                    </div>
+                    <h3>Beginner Level</h3>
+                    <p class="course-desc">Start your German journey from scratch</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Alphabet & Pronunciation</li>
+                        <li><i class="fas fa-check"></i> Basic Grammar Rules</li>
+                        <li><i class="fas fa-check"></i> Daily Conversations</li>
+                        <li><i class="fas fa-check"></i> Essential Vocabulary</li>
+                        <li><i class="fas fa-check"></i> Reading & Writing Basics</li>
+                    </ul>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3 Months</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Max 8 Students</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-course">Enroll Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card-3d" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="course-level">A2</div>
+                    </div>
+                    <h3>Elementary Level</h3>
+                    <p class="course-desc">Build on your foundation</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Conversation Development</li>
+                        <li><i class="fas fa-check"></i> Reading & Writing Skills</li>
+                        <li><i class="fas fa-check"></i> Advanced Grammar</li>
+                        <li><i class="fas fa-check"></i> Listening Comprehension</li>
+                        <li><i class="fas fa-check"></i> Cultural Insights</li>
+                    </ul>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3 Months</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Max 8 Students</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-course">Enroll Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Course Card 3 - Featured -->
+                <div class="course-card-3d featured" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="featured-badge">
+                        <i class="fas fa-fire"></i>
+                        Most Popular
+                    </div>
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="course-level">B1</div>
+                    </div>
+                    <h3>Intermediate Level</h3>
+                    <p class="course-desc">Achieve fluency and confidence</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Fluent Conversations</li>
+                        <li><i class="fas fa-check"></i> Advanced Text Writing</li>
+                        <li><i class="fas fa-check"></i> Complex Text Understanding</li>
+                        <li><i class="fas fa-check"></i> Exam Preparation</li>
+                        <li><i class="fas fa-check"></i> Professional German</li>
+                    </ul>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>4 Months</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Max 6 Students</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-course">Enroll Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="course-card-3d" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="course-level">B2</div>
+                    </div>
+                    <h3>Upper Intermediate</h3>
+                    <p class="course-desc">Master advanced German</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Language Mastery</li>
+                        <li><i class="fas fa-check"></i> Professional Communication</li>
+                        <li><i class="fas fa-check"></i> Academic Writing</li>
+                        <li><i class="fas fa-check"></i> Study Preparation</li>
+                        <li><i class="fas fa-check"></i> Business German</li>
+                    </ul>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>4 Months</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Max 6 Students</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-course">Enroll Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Course Comparison -->
+            <div class="comparison-note" data-aos="fade-up">
+                <i class="fas fa-info-circle"></i>
+                <p>Not sure which level to choose? <a href="#contact">Contact us</a> for a free placement test!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-3d">Why Choose ASANF DEUTSCH?</span>
+                <p class="subtitle">Excellence in German Language Education</p>
+            </h2>
+            <div class="features-grid">
+                <div class="feature-card-3d" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Live Online Sessions</h3>
+                    <p>High-quality video classes with full interaction and engagement</p>
+                </div>
+
+                <div class="feature-card-3d" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Expert Teacher</h3>
+                    <p>Learn from a certified instructor with proven teaching excellence</p>
+                </div>
+
+                <div class="feature-card-3d" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Official Certificates</h3>
+                    <p>Receive recognized certificates upon completion of each level</p>
+                </div>
+
+                <div class="feature-card-3d" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Flexible Schedule</h3>
+                    <p>Choose class times that fit your busy lifestyle</p>
+                </div>
+
+                <div class="feature-card-3d" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Small Groups</h3>
+                    <p>Limited class sizes ensure personalized attention for every student</p>
+                </div>
+
+                <div class="feature-card-3d" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Continuous Support</h3>
+                    <p>Get help and guidance throughout your learning journey</p>
+                </div>
+
+                <div class="feature-card-3d" data-aos="fade-up" data-aos-delay="700">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Quality Materials</h3>
+                    <p>Access to premium learning resources and study materials</p>
+                </div>
+
+                <div class="feature-card-3d" data-aos="fade-up" data-aos-delay="800">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Regular assessments to monitor your improvement and success</p>
+                </div>
+
+                <div class="feature-card-3d" data-aos="fade-up" data-aos-delay="900">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Cultural Integration</h3>
+                    <p>Learn about German culture, customs, and lifestyle</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-3d">Student Success Stories</span>
+                <p class="subtitle">What Our Students Say</p>
+            </h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Best German teacher I've ever had! The online classes are interactive and fun. 
+                        I passed my B1 exam with flying colors thanks to ASANF DEUTSCHE."
+                    </p>
+                    <div class="student-info">
+                        <div class="student-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>Hamid Zahiri.</h4>
+                            <p>B1 Graduate</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excellent teaching method! I started from zero and now I can hold conversations 
+                        in German. The small group size really helps with learning."
+                    </p>
+                    <div class="student-info">
+                        <div class="student-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>Aziz Ouali.</h4>
+                            <p>A2 Level</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Professional, patient, and very knowledgeable. The flexible schedule allowed 
+                        me to learn while working. Highly recommend ASANF DEUTSCH!"
+                    </p>
+                    <div class="student-info">
+                        <div class="student-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>Yassin Ouhlouch.</h4>
+                            <p>B2 Level</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-3d">Get In Touch</span>
+                <p class="subtitle">Start Your German Learning Journey Today</p>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="info-card-3d">
+                        <h3>Contact Information</h3>
+                        <p class="contact-intro">Ready to start learning? Reach out to us through any of these channels:</p>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+212646106987">+212 646 106 987</a>
+                                <p class="info-note">Call us anytime</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Email</h4>
+                                <a href="mailto:hamidrirou485@gmail.com">hamidrirou485@gmail.com</a>
+                                <p class="info-note">We reply within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/212646106987" target="_blank">Chat with us on WhatsApp</a>
+                                <p class="info-note">Instant responses</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Office Hours</h4>
+                                <p>Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                                <p>Sunday: 10:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-btn" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/asanf_d" class="social-btn" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-right">
+                    <div class="form-header">
+                        <i class="fas fa-paper-plane"></i>
+                        <h3>Send us a Message</h3>
+                        <p>Fill out the form and we'll get back to you shortly</p>
+                    </div>
+                    <form class="contact-form-3d" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Full Name *</label>
+                                <i class="fas fa-user"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Email Address *</label>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" required placeholder=" ">
+                                <label for="phone">Phone Number *</label>
+                                <i class="fas fa-phone"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <select id="level" required>
+                                    <option value="">Select Level *</option>
+                                    <option value="A1">A1 - Beginner</option>
+                                    <option value="A2">A2 - Elementary</option>
+                                    <option value="B1">B1 - Intermediate</option>
+                                    <option value="B2">B2 - Upper Intermediate</option>
+                                    <option value="Not Sure">Not Sure - Need Placement Test</option>
+                                </select>
+                                <label for="level"> </label>
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message *</label>
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+
+                        <button type="submit" class="btn-submit-3d">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-svg-footer" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="germanGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+                                    <stop offset="33%" style="stop-color:#DD0000;stop-opacity:1" />
+                                    <stop offset="66%" style="stop-color:#FFCE00;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M 15 25 L 15 55 L 45 60 L 45 30 Z" fill="url(#germanGradient2)" opacity="0.8"/>
+                            <path d="M 45 30 L 45 60 L 75 55 L 75 25 Z" fill="url(#germanGradient2)" opacity="0.6"/>
+                            <text x="85" y="35" font-family="Montserrat" font-weight="900" font-size="24" fill="url(#germanGradient2)">ASANF</text>
+                            <text x="85" y="55" font-family="Poppins" font-weight="600" font-size="14" fill="#4ECDC4" letter-spacing="3">DEUTSCH</text>
+                        </svg>
+                    </div>
+                    <p class="footer-desc">Your journey to German language mastery starts here. Professional online courses with expert instruction.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Our Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="#courses">A1 - Beginner</a></li>
+                        <li><a href="#courses">A2 - Elementary</a></li>
+                        <li><a href="#courses">B1 - Intermediate</a></li>
+                        <li><a href="#courses">B2 - Upper Intermediate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+212646106987">+212 646 106 987</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hamidrirou485@gmail.com">hamidrirou485@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/212646106987">WhatsApp Chat</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ASANF DEUTSCH. All rights reserved. | Designed with <i class="fas fa-heart"></i> for German learners</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
